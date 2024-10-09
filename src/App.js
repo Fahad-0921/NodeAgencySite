@@ -1,11 +1,15 @@
 import React from 'react';
-import ComingSoon from './ComingSoon';
+import AnimatedHeader from './AnimatedHeader';
+
 
 function App() {
   return (
-    <div className="App">
-    <ComingSoon />  
-  </div>
+
+    <div>
+   <AnimatedHeader />
+    </div>
+    
+
   );
 }
 

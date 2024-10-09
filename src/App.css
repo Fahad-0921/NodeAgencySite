@@ -1,19 +1,64 @@
-.coming-soon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #282c34;
-  color: white;
+/* Header */
+.large-header {
+  position: relative;
+  width: 100%;
+  /* background: #333; */
+  /* background-color: rgb(18 20 29);  */
+  overflow: hidden;
+  background-size: cover ;
+  background-position: center center;
+  z-index: 1;
+}
+#large-header{
+  position: relative;
+  z-index: 2;
+}
+
+#large-header::before {
+  content: '';
+  background-image: url(Assets/daniel-korpai-HyTwtsk8XqA-unsplash.jpg);
+  position: absolute;
+  background-size: cover;
+  background-position: left;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+
+#demo-canvas {
+  position: absolute;
+  z-index: 1111;
+ 
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  z-index: 11;
+  padding: 0;
+  color: #f9f1e9;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
 }
 
-.coming-soon h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+.main-title {
+  text-transform: uppercase;
+  font-size: 3.2em;
+  /* letter-spacing: 0.1em; */
 }
 
-.coming-soon p {
-  font-size: 1.5rem;
+.main-title .thin {
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-title {
+      font-size: 3em;
+  }
 }
